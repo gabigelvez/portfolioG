@@ -26,24 +26,32 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(241, 1, 1);
+    color: rgb(100, 5, 36);
+    font-weight: bold;
 }
 
 
+/*-----------------------------navBar----------------------------------------------*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(65, 7, 35);
+    padding: 5px;
+    border-radius: 3px;
+}
 
+.nav a {
+    background: rgba(12, 84, 133, 0.787);
+    border-radius: 3px;
+    padding: 3px;
+}
 
+.nav a:hover {
+    background: rgba(15, 111, 175, 0.787);
+
+}
 
 /*--------------------------------------------Presentacion---------------------------------------------*/
-.presentacion>a {
-    width: 100px;
-    color: #000000;
-    background: #FF87CA;
-    border: crimson solid 1px;
-    border-radius: 3px;
-    border-style: none;
-    text-decoration: none;
-
-}
 
 .presentacion {
     display: flex;
@@ -51,10 +59,20 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url(/Project/assets/foto.jpg);
+    background: url(/assets/books.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;
+    color: rgb(54, 22, 22);
+    font-weight: bold;
+    
+}
+
+.presentacion h1 {
+    background: rgba(109, 96, 96, 0.65);
+}
+
+.presentacion p {
+    background: rgba(109, 96, 96, 0.65);
 }
 
 .presentacion img {
@@ -70,6 +88,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .career>ul {
@@ -98,6 +117,9 @@ a {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-around;
+    padding: 30px;
+    border: rgb(110, 44, 108) solid 3px;
+
     
 }
 
@@ -105,6 +127,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding
 }
 
 .projectCard img {
@@ -141,6 +164,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: rgb(80, 32, 78) solid 3px;
+    padding: 30px;
 }
 
 .myStack h2 {
@@ -155,6 +180,33 @@ a {
 
 .myStack img {
     width: 200px;
+
+
+}
+
+/*--------My cv----------*/
+
+.curri {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    border: solid 3px rgb(128, 46, 117);
+}
+.curri a {
+    font-weight: bold;
+    font-size: small;
+    width: 200px;
+    color: #b3b0b0;
+    background: #8b0d52;
+    border: crimson solid 1px;
+    border-radius: 3px;
+    border-style: none;
+    text-decoration: none;
+    text-align: center;
 }
 
 
