@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200&display=swap');
+html {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #000000;
+    color: #831b4f;
+    font-size: larger;
+
+
+}
+
+
+/*-------------------------------------------General----------------------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: rgb(241, 1, 1);
+}
+
+
+
+
+
+/*--------------------------------------------Presentacion---------------------------------------------*/
+.presentacion>a {
+    width: 100px;
+    color: #000000;
+    background: #FF87CA;
+    border: crimson solid 1px;
+    border-radius: 3px;
+    border-style: none;
+    text-decoration: none;
+
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Project/assets/foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+
+
+/*-------------------------------------------Career--------------------------------------------------*/
+
+.career {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.career>ul {
+    list-style: none;
+}
+
+
+/*----------------------------------------------Projects----------------------------------------------*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    
+
+    
+}
+
+.projects>h2 {
+    text-align: center;
+}
+
+
+.myProjects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectCard img {
+    width: 200px;
+}
+
+.projectCard img:hover {
+    border: rgb(58, 54, 54) solid 1px;
+    border-radius: 60%;
+    box-shadow: -9px 1px 23px 0px rgba(97,88,88,0.75);
+    -webkit-box-shadow: -9px 1px 23px 0px rgba(97,88,88,0.75);
+    -moz-box-shadow: -9px 1px 23px 0px rgba(97,88,88,0.75);
+}
+
+/*-----------------------------------------myStack-------------------------------------------------*/
+
+.myStack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.myStack h2 {
+    text-align: center;
+}
+
+.stackImg {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.myStack img {
+    width: 200px;
+}
+
+
+/*-------------------------------------Contact-------------------------------------------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact>form>* {
+    padding: 5px;
+}
+
+.submitButton {
+    background: #FF87CA;
+    border: crimson solid 1px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+}
