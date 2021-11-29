@@ -57,6 +57,10 @@ a {
     color: black;
 }
 
+.presentacion img {
+    width: 200px;
+    border-radius: 55%;
+}
 
 
 /*-------------------------------------------Career--------------------------------------------------*/
@@ -105,14 +109,30 @@ a {
 
 .projectCard img {
     width: 200px;
+
 }
 
-.projectCard img:hover {
+@keyframes workAnimation {
+    from {
+        width: 200px;
+    }
+    to {
     border: rgb(58, 54, 54) solid 1px;
     border-radius: 60%;
     box-shadow: -9px 1px 23px 0px rgba(97,88,88,0.75);
     -webkit-box-shadow: -9px 1px 23px 0px rgba(97,88,88,0.75);
     -moz-box-shadow: -9px 1px 23px 0px rgba(97,88,88,0.75);
+    }
+}
+
+.projectCard img:hover {
+    animation-name: workAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: running;
 }
 
 /*-----------------------------------------myStack-------------------------------------------------*/
